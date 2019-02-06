@@ -1,0 +1,37 @@
+extends layout/layout
+
+block title
+	title Profile
+
+block content
+	include include/header
+
+	// BEGIN profile
+	section.profile
+		.profile__wrap
+			.profile__user-info.fl.fl--justify-b
+				.user
+					a.avatar--profile.avatar(href="profile.html")
+						img.avatar__img(src="public/img/photo.png" alt="photo")
+					a.user__name.text--color-black.let-space--01em(href="profile.html") Sarah White
+					.user__info-box.fl.fl--flow-col-wrap
+						span.user__span-info.user__span-info--job.let-space--01em 3D Artist
+						span.user__span-info.user__span-info--city.let-space--01em Haifa, Israel
+				.profile__info.fl.fl--flow-col-wrap
+					.profile__header.fl.fl--justify-b
+						.profile__data-block.data-user.fl.fl--justify-b
+							a.data-user__block.data-user__block--wishes.text--color-black.fl.fl--flow-col-wrap(href="#")
+								span.data-user__span--count 234
+								span.data-user__span--name.let-space--01em Wishes
+							a.data-user__block.data-user__block--friends.text--color-black.fl.fl--flow-col-wrap(href="#")
+								span.data-user__span--count 145
+								span.data-user__span--name.let-space--01em Friends
+						a.profile__btn.btn--blue.btn.let-space--01em(href="#") Follow
+					include include/hashtags
+			.profile__control.control.fl
+				include include/filter
+				include include/tabs
+			include include/want-gallery
+	// END profile
+
+	include include/modal

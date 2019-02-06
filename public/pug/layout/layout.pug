@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="en")
+	- const publicPath = process.env.NODE_ENV == 'production' ? '/' : './';
+	head
+		title 
+		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no, user-scalable=no')
+
+		meta(name='keywords', content='')
+		meta(name='description', content='')
+
+		meta(name='twitter:card', content='summary_large_image')
+		meta(name='twitter:title', content="")
+		meta(name='twitter:description', content='')
+		meta(name='twitter:image', content='')
+		meta(name='twitter:image:alt', content="")
+		meta(property='og:title', content="")
+		meta(property='og:site_name', content='')
+		meta(property='og:url', content='')
+		meta(property='og:description', content="")
+		meta(property='og:type', content='website')
+		meta(property='og:image', content='')
+
+		link(rel='alternate', hreflang='', href='/')
+		link(rel='image_src', href='')
+		link(rel='shortcut icon', href='')
+		link(rel='apple-touch-icon', sizes='128x128', href='')
+		link(rel='apple-touch-icon-precomposed', sizes='128x128', href='')
+		link(rel='stylesheet', href=publicPath+'public/build/build.app.css')
+		block title
+	body
+		block content
+		script(src=publicPath+"public/build/build.app.js")
+		<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+		script(src=publicPath+"public/js/masonry.pkgd.min.js")
+		script(src=publicPath+"public/js/script.js")
