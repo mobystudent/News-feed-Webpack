@@ -10,12 +10,12 @@
 // 	});
 // })
 
-imagesLoaded(document.querySelector('.want-gallery'), function( instance ) {
-	var msnry = new Masonry( '.want-gallery', {
-   	columnWidth: ".want-gallery__item",
+imagesLoaded(document.querySelector('.gallery'), function() {
+	var msnry = new Masonry( '.gallery', {
+   	columnWidth: ".img-thing--gallery",
    	transitionDuration: '0.5s',
    	horizontalOrder: true,
-   	itemSelector: '.want-gallery__item'
+   	itemSelector: '.img-thing--gallery'
 	});
 });
 

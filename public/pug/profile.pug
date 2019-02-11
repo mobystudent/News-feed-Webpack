@@ -27,11 +27,69 @@ block content
 								span.data-user__span--count 145
 								span.data-user__span--name.let-space--01em Friends
 						a.profile__btn.btn--blue.btn.let-space--01em(href="#") Follow
-					include include/hashtags
-			.profile__control.control.fl
+					// BEGIN hashtags
+					.hashtags.fl.fl--align-end
+						.hashtags__wrap.fl
+							a.hashtags__hash.let-space--01em(href="#")
+								span #selfcare
+							a.hashtags__hash.let-space--01em(href="#")
+								span #love
+							a.hashtags__hash.let-space--01em(href="#")
+								span #care
+							a.hashtags__hash.let-space--01em(href="#")
+								span #ideas
+							a.hashtags__hash.let-space--01em(href="#")
+								span #goodvibes
+							a.hashtags__hash.let-space--01em(href="#")
+								span #positivity
+							a.hashtags__hash.let-space--01em(href="#")
+								span #tumblr
+							a.hashtags__hash.let-space--01em(href="#")
+								span #health
+							a.hashtags__hash.let-space--01em(href="#")
+								span #beauty
+							a.hashtags__hash.let-space--01em(href="#")
+								span #lifestyle
+							a.hashtags__hash.let-space--01em(href="#")
+								span #tips
+							a.hashtags__hash.let-space--01em(href="#")
+								span #success
+							a.hashtags__hash.let-space--01em(href="#")
+								span #motivation
+							a.hashtags__hash.let-space--01em(href="#")
+								span #entrepreneur
+							a.hashtags__hash.let-space--01em(href="#")
+								span #digitalmarketing
+					// END hashtags
+			.profile__control.fl
 				include include/filter
 				include include/tabs
-			include include/want-gallery
+			// BEGIN gallery
+			.gallery.fl
+				a.img-thing--gallery(href="item.html")
+					img.want-list__img(src="public/img/img1.png" alt="img1")
+				a.img-thing--gallery(href="item.html")
+					img.want-list__img(src="public/img/img2.png" alt="img2")
+				a.img-thing--gallery(href="item.html")
+					img.want-list__img(src="public/img/img3.png" alt="img3")
+				a.img-thing--gallery(href="item.html")
+					img.want-list__img(src="public/img/img4.png" alt="img4")
+				a.img-thing--gallery(href="item.html")
+					img.want-list__img(src="public/img/img5.png" alt="img5")
+				a.img-thing--gallery(href="item.html")
+					img.want-list__img(src="public/img/img6.png" alt="img6")
+				a.img-thing--gallery(href="item.html")
+					img.want-list__img(src="public/img/img2.png" alt="img2")
+				a.img-thing--gallery(href="item.html")
+					img.want-list__img(src="public/img/img6.png" alt="img6")
+				a.img-thing--gallery(href="item.html")
+					img.want-list__img(src="public/img/img1.png" alt="img1")
+			// END gallery
 	// END profile
 
-	include include/modal
+	// BEGIN modal-bg
+	.modal-bg
+	// END modal-bg
+	include include/modal friend
+	include include/modal notification
+	include include/modal add-wishes

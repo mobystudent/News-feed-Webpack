@@ -1,0 +1,97 @@
+extends layout/layout
+
+block title
+   title Item
+
+block content
+   include include/header
+
+   
+   section.content.fl.fl--justify-c
+      .content__container
+         // BEGIN item
+         .item
+            .user.user--item.fl.fl--flow-col-wrap.fl--align-c
+               a.avatar--item.avatar(href="profile.html")
+                  img.avatar__img.avatar__img--item(src="public/img/photo.png" alt="photo")
+               .user__info-box.user__info-box--item.fl.fl--flow-col-wrap.fl--align-c
+                  a.user__name.user__name--item.text--color-black.let-space--01em(href="profile.html") Sarah White
+                  a.user__label--need-it.text--color-black.let-space--01em(href="#") Need it
+            .item__img-box
+               a.img-thing--news(href="item.html")
+                  img(src="public/img/image-news.png" alt="image-news")
+               .item__img-control.fl.fl--justify-b.fl--align-c
+                  .item__icons-left.fl
+                     a.item__icon.item__icon--present(href="#" title="present")
+                        img(src="public/img/present.png" alt="present")
+                     a.item__icon.item__icon--community(href="#" title="community")
+                        img(src="public/img/community.png" alt="community")
+                  .item__icons-likes.fl.fl--align-c
+                     a.item__icon.item__icon--like(href="#" title="like")
+                        img(src="public/img/like.png" alt="like")
+                     span.item__count-likes.let-space--01em 129 Likes
+                  .item__icons-right.fl
+                     a.item__icon.item__icon--add(href="#" title="add")
+                        img(src="public/img/add.png" alt="add")
+                     a.item__icon.item__icon--basket(href="#" title="basket")
+                        img(src="public/img/basket.png" alt="basket")
+            .descrip.descrip--item
+               p.descrip__title Nike Air Force 1
+               p.descrip__text The legend lives on in the Nike Air Force 1, with an iconic look and plenty of cushioning.
+            .item__hashtags
+               .item__hash-title.fl
+                  a(href="profile.html").item__nikename.text--color-black sarah_white
+                  span.item__span--i-want I want this sneakers
+               .hashtags.hashtags--item
+                  .hashtags__wrap.hashtags__wrap--item.fl
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #selfcare
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #love
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #care
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #ideas
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #goodvibes
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #positivity
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #tumblr
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #health
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #beauty
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #lifestyle
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #tips
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #success
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #motivation
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #entrepreneur
+                     a.hashtags__hash.hashtags__hash--item(href="#")
+                        span #digitalmarketing
+            .comment
+               a.comment__count-all.comment__count-all--item.text--color-999(href="#") View all 2 comments
+               .comment__box
+                  .comment__item.comment__item--item.fl
+                     span.comment__name virtuoz
+                     .comment__message.fl
+                        a.comment__link-user(href="profile.html") @sarah white
+                        p.comment__text Good choice :)
+               .comment__add.fl
+                  a.avatar.avatar--comment(href="#")
+                     img.avatar__img(src="public/img/photo.png" alt="avatar comment")
+                  textarea.textarea.textarea--comment(cols="30" rows="10" placeholder="Add a comment...")
+               span.comment__date.text--color-999 6 april
+         // END item
+	
+   // BEGIN modal-bg
+   .modal-bg
+   // END modal-bg
+   include include/modal friend
+   include include/modal notification
+   include include/modal add-wishes

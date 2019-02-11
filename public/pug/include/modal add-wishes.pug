@@ -1,0 +1,27 @@
+// BEGIN modal add-wishes
+.modal.modal--add-wish
+	h2.modal__title.let-space--01em Add wish
+	form.modal__form(action="#")
+		.write-set.modal__write-set.modal__write-set--url.fl.fl--flow-col-wrap
+			label.write-set__title.text--color-ac(for="url") Add a link from the store
+			input.write-set__input.write-set__field#url(type="url" required)
+		.modal__images.fl.fl--justify-c
+			a.modal__img.modal__img--front(title="front image which to view in your wish" href="#")
+			a.modal__img.modal__img--add(title="add image what you wish" href="#")
+		.modal__write-set.write-set.modal__write-set--name.fl.fl--flow-col-wrap
+			label.write-set__title.text--color-ac(for="name") Product name
+			input.write-set__input.write-set__field#name(type="text" required)
+		.btns-control.modal__btns-control.fl.fl--justify-b
+			a.btns-control__btn.btns-control__btn--need.btn.let-space--01em(href="#") Need
+			a.btns-control__btn.btns-control__btn--want.btn.let-space--01em(href="#") Want
+			a.btns-control__btn.btns-control__btn--given.btn.let-space--01em(href="#") Given
+		.modal__write-set.write-set.modal__write-set--descrip.fl.fl--flow-col-wrap
+			label.write-set__title.text--color-ac(for="descrip") Product description
+			textarea.write-set__textarea.write-set__field#descrip(type="text" required)
+		.modal__write-set.write-set.modal__write-set--tags.fl.fl--flow-col-wrap
+			label.write-set__title.text--color-ac(for="tags") Write a caption, tags...
+			span.write-set__slogan I want this sneakers
+			textarea.write-set__textarea.write-set__field#tags(type="text" required)
+		button.modal__submit(href="#")
+	img.modal__close(alt="close" src="public/img/close.png")
+// END modal add-wish

@@ -1,26 +1,32 @@
 .hashtags
-	flex: 1 0 auto
-	margin: 35px 0 0 -125px
-	
-	@media screen and (min-device-width: 576px) and (min-device-height: 576px)
-		margin: 0
-		
-	@media screen and (min-width: 768px) and (min-device-width: 768px) and (min-device-height: 320px)
-		margin: 0
-		width: 445px
+	flex 1 0 auto
+	margin 50px 0 0 -140px
+
+	@media screen and (min-width 576px)
+		margin 0
+
+	@media screen and (min-width 768px)
+		width 445px
+
+	&--item
+		width 100%
+		margin 0 0 10px
+
+		@media screen and (min-width 576px)
+			margin-bottom 15px
 
 	&__wrap
-		flex-flow: row wrap
-		margin: 0 -1px
+		flex-flow row wrap
+		margin 0 -1px
+
+		&--item
+			margin 0 -2px
 
 	&__hash
-		display: inline
-		color: #616161
-		margin: 0 1px
-		font-size: 14px
-		
-		@media screen and (min-device-width: 576px) and (min-device-height: 576px)
-			font-size: 18px
-			
-		@media screen and (min-width: 768px) and (min-device-width: 768px) and (min-device-height: 320px)
-			font-size: 18px
+		display inline
+		color #616161
+		margin 0 1px
+
+		&--item
+			color #035
+			margin 0 2px 2px
