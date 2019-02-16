@@ -1,46 +1,30 @@
 .write-set
+	&--modal
+		margin-bottom 30px
+
+		@media screen and (min-width 576px)
+			margin-bottom 40px
+
+	&--tags
+		@media screen and (min-width 768px)
+			margin-bottom 60px
+
 	&__title
 		cursor pointer
 		margin-bottom 5px
 
-		@media screen and (min-width 576px) and (min-height 320px)
-			margin-bottom 5px
-
-		@media screen and (min-width 576px) and (min-height 576px)
-			margin-bottom 10px
-
-		@media screen and (min-width 768px) and (min-height 320px)
-			margin-bottom 5px
-
-		@media screen and (min-width 768px) and (min-height 576px)
+		@media screen and (min-width 576px)
 			margin-bottom 10px
 
 	&__field
-		font-size 14px
+		font-size 16px
 		border none
 		border-bottom 1px solid color-ac
 		font-family robotoregular, sans-serif
 
-		@media screen and (min-width 576px) and (min-height 320px)
-			line-height 26px
-
-		@media screen and (min-width 576px) and (min-height 576px)
+		@media screen and (min-width 576px)
 			line-height 30px
-			font-size 18px
-
-		@media screen and (min-width 768px) and (min-height 320px)
-			line-height 26px
-
-		@media screen and (min-width 768px) and (min-height 576px)
 			font-size 18px
 
 	&__slogan
 		margin-bottom 5px
-
-	&__textarea
-		resize none
-		height 22px
-		overflow hidden
-
-		@media screen and (min-width 576px) and (min-height 320px)
-			height 26px

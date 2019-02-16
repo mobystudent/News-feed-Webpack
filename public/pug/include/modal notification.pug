@@ -1,42 +1,56 @@
-// BEGIN modal notification
-.modal.modal--list.modal--notification
-	h2.modal__title.let-space--01em Notification
-	ul.modal__ul
-		li.modal__item.user.fl
-			a.avatar--notification.avatar--note-no-request.avatar(href="profile.html")
-				img.avatar__img.avatar__img--notification(src="public/img/photo.png" alt="photo")
-			.user__links-wrap.user__links-wrap--notification.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="profile.html") sarah_hype
-				a.user__link.user__link--request.let-space--01em(href="#") sent a request to you
-		li.modal__item.user.fl
-			a.avatar--notification.avatar--note-no-request.avatar(href="#")
-				img.avatar__img.avatar__img--notification(src="public/img/user-img1.png" alt="photo")
-			.user__links-wrap.user__links-wrap--notification.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") vladimir_vjach
-				a.user__link.user__link--request.let-space--01em(href="#") sent a request to you
-		li.modal__item.user.fl
-			a.avatar--notification.avatar(href="#")
-				img.avatar__img.avatar__img--notification(src="public/img/user-img2.png" alt="photo")
-			.user__links-wrap.user__links-wrap--notification.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") maksymbond
-				a.user__link.user__link--request.user__link--accept-request.let-space--01em(href="#") accepted your request
-		li.modal__item.user.fl
-			a.avatar--notification.avatar(href="#")
-				img.avatar__img.avatar__img--notification(src="public/img/user-img3.png" alt="photo")
-			.user__links-wrap.user__links-wrap--notification.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") disorder
-				a.user__link.user__link--request.user__link--accept-request.let-space--01em(href="#") accepted your request
-		li.modal__item.user.fl
-			a.avatar--notification.avatar--note-no-request.avatar(href="#")
-				img.avatar__img.avatar__img--notification(src="public/img/user-img4.png" alt="photo")
-			.user__links-wrap.user__links-wrap--notification.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") izushka
-				a.user__link.user__link--request.let-space--01em(href="#") sent a request to you
-		li.modal__item.user.fl
-			a.avatar--notification.avatar--note-no-request.avatar(href="profile.html")
-				img.avatar__img.avatar__img--notification(src="public/img/photo.png" alt="photo")
-			.user__links-wrap.user__links-wrap--notification.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="profile.html") sarah_hype
-				a.user__link.user__link--request.let-space--01em(href="#") sent a request to you
-	img.modal__close(alt="close" src="public/img/close.png")
-// END modal notification
+.modal.modal--notification
+	// BEGIN modal notification
+	section.content.content--modal.content--notification.fl.fl--justify-c
+		.content__container.content__container--modal
+			.modal__header.fl
+				h2.content__title.content__title--modal.let-space--01em Notification
+				span.modal__close
+			// BEGIN search-box
+			.search-box
+				input.input.input--search-box
+				img.search-box__img(alt="search" src="public/img/search.png")
+			// END search-box
+			ul.list--modal.list
+				li.list__li--modal
+					a.user.user--modal.fl(href="profile.html" title="Name user")
+						.avatar--modal.avatar--note-no-request.avatar
+							img.avatar__img.avatar__img--notification(src="public/img/photo.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em sarah_hype
+							span.user__request.text--color-black.let-space--01em sent a request to you
+				li.list__li--modal
+					a.user.user--modal.fl(href="#" title="Name user")
+						.avatar--modal.avatar--note-no-request.avatar
+							img.avatar__img.avatar__img--notification(src="public/img/user-img1.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em vladimir_vjach
+							span.user__request.text--color-black.let-space--01em sent a request to you
+				li.list__li--modal
+					a.user.user--modal.fl(href="#" title="Name user")
+						.avatar--modal.avatar
+							img.avatar__img.avatar__img--notification(src="public/img/user-img2.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em maksymbond
+							span.user__request--accept.text--color-ac.let-space--01em accepted your request
+				li.list__li--modal
+					a.user.user--modal.fl(href="#" title="Name user")
+						.avatar--modal.avatar
+							img.avatar__img.avatar__img--notification(src="public/img/user-img3.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em disorder
+							span.user__request--accept.text--color-ac.let-space--01em accepted your request
+				li.list__li--modal
+					a.user.user--modal.fl(href="#" title="Name user")
+						.avatar--modal.avatar--note-no-request.avatar
+							img.avatar__img.avatar__img--notification(src="public/img/user-img4.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em izushka
+							span.user__request.text--color-black.let-space--01em sent a request to you
+				li.list__li--modal
+					a.user.user--modal.fl(href="profile.html" title="Name user")
+						.avatar--modal.avatar--note-no-request.avatar
+							img.avatar__img.avatar__img--notification(src="public/img/photo.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em sarah_hype
+							span.user__request.text--color-black.let-space--01em sent a request to you
+	// END modal notification

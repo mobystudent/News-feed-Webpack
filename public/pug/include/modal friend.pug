@@ -1,42 +1,56 @@
-// BEGIN modal friend
-.modal.modal--list.modal--friend
-	h2.modal__title.let-space--01em Friends
-	ul.modal__ul
-		li.modal__item.user.fl
-			a.avatar--friend.avatar(href="profile.html")
-				img.avatar__img.avatar__img--friend(src="public/img/photo.png" alt="photo")
-			.user__links-wrap.user__links-wrap--friend.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="profile.html") sarah_hype
-				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em( href="#") Sarah White
-		li.modal__item.user.fl
-			a.avatar--friend.avatar(href="#")
-				img.avatar__img.avatar__img--friend(src="public/img/user-img1.png" alt="photo")
-			.user__links-wrap.user__links-wrap--friend.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") vladimir_vjach
-				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em(href="#") Vladimir Viacheslavovich
-		li.modal__item.user.fl
-			a.avatar--friend.avatar(href="#")
-				img.avatar__img.avatar__img--friend(src="public/img/user-img2.png" alt="photo")
-			.user__links-wrap.user__links-wrap--friend.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") maksymbond
-				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em(href="#") Maksym Bondarenko
-		li.modal__item.user.fl
-			a.avatar--friend.avatar(href="#")
-				img.avatar__img.avatar__img--friend(src="public/img/user-img3.png" alt="photo")
-			.user__links-wrap.user__links-wrap--friend.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") disorder
-				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em(href="#") Dmytriy Lehenkiy
-		li.modal__item.user.fl
-			a.avatar--friend.avatar(href="#")
-				img.avatar__img.avatar__img--friend(src="public/img/user-img4.png" alt="photo")
-			.user__links-wrap.user__links-wrap--friend.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="#") izushka
-				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em(href="#") Chernova Iuliia
-		li.modal__item.user.fl
-			a.avatar--friend.avatar(href="profile.html")
-				img.avatar__img.avatar__img--friend(src="public/img/photo.png" alt="photo")
-			.user__links-wrap.user__links-wrap--friend.fl.fl--flow-col-wrap
-				a.user__link.user__link--nikename.text--color-black.let-space--01em(href="profile.html") sarah_hype
-				a.user__link.user__link--name.user__name.user__name--modal.text--color-ac.let-space--01em( href="#") Sarah White
-	img.modal__close(alt="close" src="public/img/close.png")
-// END modal friend
+.modal.modal--friend
+	// BEGIN modal friend
+	section.content.content--modal.content--friend.fl.fl--justify-c
+		.content__container.content__container--modal
+			.modal__header.fl
+				h2.content__title.content__title--modal.let-space--01em Friends
+				span.modal__close
+			// BEGIN search-box
+			.search-box
+				input.input.input--search-box
+				img.search-box__img(alt="search" src="public/img/search.png")
+			// END search-box
+			ul.list--modal.list
+				li.list__li--modal
+					a.user.user--modal.fl(href="profile.html" title="Name user")
+						.avatar--modal.avatar
+							img.avatar__img(src="public/img/photo.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em sarah_hype
+							span.user__name.user__name--modal.text--color-ac.let-space--01em Sarah White
+				li.list__li--modal
+					a.user.user--modal.fl(href="#" title="Name user")
+						.avatar--modal.avatar
+							img.avatar__img(src="public/img/user-img1.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em vladimir_vjach
+							span.user__name.user__name--modal.text--color-ac.let-space--01em Vladimir Viacheslavovich Brezhnev
+				li.list__li--modal
+					a.user.user--modal.fl(href="#" title="Name user")
+						.avatar--modal.avatar
+							img.avatar__img(src="public/img/user-img2.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em maksymbond
+							span.user__name.user__name--modal.text--color-ac.let-space--01em Maksym Bondarenko
+				li.list__li--modal
+					a.user.user--modal.fl(href="#" title="Name user")
+						.avatar--modal.avatar
+							img.avatar__img(src="public/img/user-img3.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em disorder
+							span.user__name.user__name--modal.text--color-ac.let-space--01em Dmytriy Lehenkiy
+				li.list__li--modal
+					a.user.user--modal.fl(href="#" title="Name user")
+						.avatar--modal.avatar
+							img.avatar__img(src="public/img/user-img4.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em izushka
+							span.user__name.user__name--modal.text--color-ac.let-space--01em Chernova Iuliia
+				li.list__li--modal
+					a.user.user--modal.fl(href="profile.html" title="Name user")
+						.avatar--modal.avatar
+							img.avatar__img(src="public/img/photo.png" alt="photo")
+						.user__info.user__info--modal.fl.fl--flow-col-wrap.fl--justify-c
+							span.user__nikename.text--color-black.let-space--01em sarah_hype
+							span.user__name.user__name--modal.text--color-ac.let-space--01em Sarah White
+	// END modal friend

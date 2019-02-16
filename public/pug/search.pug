@@ -1,0 +1,223 @@
+extends layout/layout
+
+block title
+   title Item
+
+block content
+   include include/header
+   
+   // BEGIN search
+   section.content.content--search.search.fl.fl--justify-c
+      .content__container.content__container--search
+         h2.content__title.content__title--search.let-space--01em Search
+         // BEGIN search-box
+         .search-box.search-box--search
+            input.input.input--search-box
+            img.search-box__img(alt="search" src="public/img/search.png")
+         // END search-box
+         .search__block
+            .search__block-title.let-space--01em Popular tags
+            // BEGIN circles-tags
+            .circles-tags.fl.fl--justify-c.fl--align-c
+               .circles-tags__left-box.fl.fl--flow-col-wrap.fl--align-end
+                  span.circles-tags__item.circles-tags__item--first.fl.fl--justify-c.fl--align-c.let-space--01em Sport
+                  span.circles-tags__item.circles-tags__item--second.fl.fl--justify-c.fl--align-c.let-space--01em Clothing
+               .circles-tags__center-box
+                  span.circles-tags__item.circles-tags__item--third.fl.fl--justify-c.fl--align-c.let-space--01em Electronics
+               .circles-tags__right-box
+                  span.circles-tags__item.circles-tags__item--fourth.fl.fl--justify-c.fl--align-c.let-space--01em Shoes
+                  span.circles-tags__item.circles-tags__item--fifth.fl.fl--justify-c.fl--align-c.let-space--01em Car devices
+                  span.circles-tags__item.circles-tags__item--sixth.fl.fl--justify-c.fl--align-c.let-space--01em Watches
+               // END circles-tags
+         .search__block
+            .search__block-title.let-space--01em Top goods
+            // BEGIN gallery
+            .gallery.fl.fl--flow-row-wrap
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img1.png" alt="img1")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img2.png" alt="img2")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img3.png" alt="img3")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img4.png" alt="img4")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img5.png" alt="img5")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img6.png" alt="img6")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img2.png" alt="img2")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img6.png" alt="img6")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img1.png" alt="img1")
+            // END gallery
+         // BEGIN btns-control
+         .btns-control.btns-control--search.fl.fl--justify-b
+            a.btns-control__btn.btns-control__btn--search.btns-control__btn--goods.btn.let-space--01em(href="#") Goods
+            a.btns-control__btn.btns-control__btn--search.btns-control__btn--people.btn.let-space--01em(href="#") People
+            a.btns-control__btn.btns-control__btn--search.btns-control__btn--tags.btn.let-space--01em(href="#") Tags
+         // END btns-control
+         // BEGIN search__block-goods
+         .search__block-goods
+            // BEGIN gallery
+            .gallery.gallery--search.fl.fl--flow-row-wrap
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img7.png" alt="img7")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img8.png" alt="img8")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img9.png" alt="img9")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img10.png" alt="img10")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img11.png" alt="img11")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img12.png" alt="img12")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img13.png" alt="img13")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img14.png" alt="img14")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img15.png" alt="img15")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img16.png" alt="img16")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img17.png" alt="img17")
+               a.img-thing--gallery(href="item.html")
+                  img.want-list__img(src="public/img/img18.png" alt="img18")
+            // END gallery
+         // END search__block-goods
+         // BEGIN search__block-people
+         .search__block-people
+            ul.list--people
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="profile.html" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/photo.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em sarah_hype
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Sarah White
+                     a.user__add-user(href="#" title="Add user to friend list")
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="#" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/user-img1.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em vladimir_vjach
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Vladimir Viacheslavovich Brezhnev
+                     a.user__add-user(href="#" title="Add user to friend list")
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="#" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/user-img2.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em maksymbond
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Maksym Bondarenko
+                     a.user__add-user(href="#" title="Add user to friend list")
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="#" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/user-img3.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em disorder
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Dmytriy Lehenkiy
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="#" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/user-img4.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em izushka
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Chernova Iuliia
+                     a.user__add-user(href="#" title="Add user to friend list")
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="profile.html" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/photo.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em sarah_hype
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Sarah White
+                     a.user__add-user(href="#" title="Add user to friend list")
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="#" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/user-img1.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em vladimir_vjach
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Vladimir Viacheslavovich Brezhnev
+                     a.user__add-user(href="#" title="Add user to friend list")
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="#" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/user-img2.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em maksymbond
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Maksym Bondarenko
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="#" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/user-img3.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em disorder
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Dmytriy Lehenkiy
+                     a.user__add-user(href="#" title="Add user to friend list")
+               li.list__li--people
+                  .user--search.fl
+                     a.user__wrap.fl(href="#" title="Name user")
+                        .avatar--search.avatar
+                           img.avatar__img.avatar__img--search(src="public/img/user-img4.png" alt="photo")
+                        .user__info.user__info--search.fl.fl--flow-col-wrap.fl--justify-c
+                           span.user__nikename.user__nikename--search.text--color-black.let-space--01em izushka
+                           span.user__name.user__name--search.text--color-ac.let-space--01em Chernova Iuliia
+                     a.user__add-user(href="#" title="Add user to friend list")
+         // END search__block-people
+         // BEGIN search__block-tags
+         .search__block-tags
+            ul.list--tags
+               li.list__li--tags
+                  a.tags.fl
+                     span.tags__sign.fl.fl--justify-c.fl--align-c(href="#") &#35
+                     .tags__info.fl.fl--flow-col-wrap.fl--justify-c
+                        span.tags__name.text--color-black.let-space--01em(href="#") #shoes
+                        span.tags__count.text--color-ac.let-space--01em( href="#") 263,700 posts
+               li.list__li--tags
+                  a.tags.fl
+                     span.tags__sign.fl.fl--justify-c.fl--align-c(href="#") &#35
+                     .tags__info.fl.fl--flow-col-wrap.fl--justify-c
+                        span.tags__name.text--color-black.let-space--01em(href="#") #shoes4you
+                        span.tags__count.text--color-ac.let-space--01em( href="#") 47,892 posts
+               li.list__li--tags
+                  a.tags.fl
+                     span.tags__sign.fl.fl--justify-c.fl--align-c(href="#") &#35
+                     .tags__info.fl.fl--flow-col-wrap.fl--justify-c
+                        span.tags__name.text--color-black.let-space--01em(href="#") #shoes_sport
+                        span.tags__count.text--color-ac.let-space--01em( href="#") 21,562 posts
+               li.list__li--tags
+                  a.tags.fl
+                     span.tags__sign.fl.fl--justify-c.fl--align-c(href="#") &#35
+                     .tags__info.fl.fl--flow-col-wrap.fl--justify-c
+                        span.tags__name.text--color-black.let-space--01em(href="#") #shoescollection
+                        span.tags__count.text--color-ac.let-space--01em( href="#") 7581 posts  
+               li.list__li--tags
+                  a.tags.fl
+                     span.tags__sign.fl.fl--justify-c.fl--align-c(href="#") &#35
+                     .tags__info.fl.fl--flow-col-wrap.fl--justify-c
+                        span.tags__name.text--color-black.let-space--01em(href="#") #shoesstudio7
+                        span.tags__count.text--color-ac.let-space--01em( href="#") 350 posts   
+         // END search__block-tags
+   // END search
+   
+   // BEGIN modal-bg
+   .modal-bg
+   // END modal-bg
+   include include/modal notification
+   include include/modal add-wishes

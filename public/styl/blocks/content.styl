@@ -1,31 +1,52 @@
 .content
-   background: url(../img/item-bg-mb.png) center top no-repeat;
-   background-size: 100% 120px;
+   background url(../img/item-bg-mb.png) center top no-repeat
+   background-size 100% 120px
 
    @media screen and (min-width 576px)
-      background: url(../img/item-bg-tb.png) no-repeat;
-      background-size: 100% 180px;
+      background url(../img/item-bg-tb.png) no-repeat
+      background-size 100% 180px
 
    @media screen and (min-width 768px)
       background url(../img/content.png) no-repeat
-      background-size: 100% 125px;
+      background-size 100% 125px
 
    &--news
-      background: url(../img/news-bg-mb.png) center top no-repeat;
-      background-size: 100% 75px;
+      background url(../img/news-bg-mb.png) center top no-repeat
+      background-size 100% 75px
 
       @media screen and (min-width 576px)
-         background: url(../img/news-bg-tb.png) center top no-repeat;
+         background url(../img/news-bg-tb.png) center top no-repeat
          background-size 100% 88px
 
       @media screen and (min-width 768px)
          background url(../img/content.png) no-repeat
          background-size 100% 104px
 
+   &--modal
+      background url(../img/item-bg-mb.png) no-repeat, #fff
+      background-size 120% 120px
+
+      @media screen and (min-width 576px)
+         background url(../img/item-bg-tb.png) no-repeat, #fff
+         background-size 100% 212px
+
+      @media screen and (min-width 768px)
+         background #fff
+
+   &--search
+      background-size 120% 120px
+
+      @media screen and (min-width 576px)
+         background-size 100% 212px
+
+      @media screen and (min-width 768px)
+         background-size 100% 125px
+
    &__container
       margin 0 15px
       max-width 460px
-      padding 35px 0 60px
+      padding 35px 0 50px
+      width 100%
 
       @media screen and (min-width 576px)
          max-width 668px
@@ -39,7 +60,7 @@
       &--news
          margin 0 15px -10px
          overflow hidden
-         padding: 80px 0 48px;
+         padding: 80px 0 50px;
 
          @media screen and (min-width 576px)
             margin 0 50px -25px
@@ -47,3 +68,54 @@
 
          @media screen and (min-width 768px)
             margin 0 0 -35px
+
+      &--modal
+         padding 60px 0 50px
+         margin 0 25px
+
+         @media screen and (min-width 576px)
+            margin 0 50px
+            padding 105px 0 85px
+            max-width 568px
+
+         @media screen and (min-width 768px)
+            padding 20px 20px 0
+            margin 0
+            max-width none
+            width 465px
+
+      &--add-wishes
+         @media screen and (min-width 768px)
+            width 768px
+
+      &--search
+         padding 70px 0 50px
+
+         @media screen and (min-width 576px)
+            max-width 568px
+            margin 0 50px
+            padding 105px 0 85px
+
+         @media screen and (min-width 768px)
+            padding 125px 0 0
+
+   &__title
+      font-size 22px
+      margin 0 0 50px 5px
+      color #fff
+      order 2
+
+      @media screen and (min-width 576px)
+         font-size 30px
+         margin 0 0 100px 10px
+
+      &--modal
+         @media screen and (min-width 768px)
+            color #000
+            font-size 24px
+            margin 0 0 30px 0
+            order 1
+
+      &--search
+         @media screen and (min-width 768px)
+            display none

@@ -1,13 +1,21 @@
 .textarea
-	font 14px robotoregular, sans-serif
-	placeholder(#999, 16px)
 	resize none
-	width 100%
-	border none
-	padding 5px 10px 2px
-	height 26px
+	overflow auto
 
-	@media screen and (min-width 576px)
+	&--comment
+		font-size 14px
 		placeholder(#999, 16px)
-		font-size 16px
+		width 100%
+		border none
 		padding 5px 10px 2px
+		height 26px
+
+		@media screen and (min-width 576px)
+			font-size 16px
+
+	&--write-set
+		height 22px
+		overflow hidden
+
+		@media screen and (min-width 576px)
+			height 30px
